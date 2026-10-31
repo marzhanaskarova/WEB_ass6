@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 3 - DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Part 1</a>
+        <a href="part2.html">Part 2</a>
+        <a href="part3.html" class="active">Part 3</a>
+        <a href="part4.html">Part 4</a>
+        <a href="part5.html">Part 5</a>
+    </nav>
+
+    <div class="container">
+        // Add and Remove Elements
+        <section>
+            <h2>Task 5: Add & Remove Elements</h2>
+            <ul id="my-list">
+                <li>Initial item 1</li>
+            </ul>
+            <button id="btn-add">Add Item (Append)</button>
+            <button id="btn-prepend">Add Item (Prepend)</button>
+            <button id="btn-remove">Remove Last Item</button>
+        </section>
+
+        // Modifying Attributes
+        <section>
+            <h2>Task 6: Modifying Attributes</h2>
+            <img id="changeable-img" src="https://via.placeholder.com/150/ff0000" alt="Red">
+            <br>
+            <button id="btn-change-img">Change Image</button>
+            <br><br>
+            <a id="my-link" href="https://google.com" target="_blank">Link (Google)</a>
+            <br>
+            <button id="btn-change-link">Change Link to YouTube</button>
+        </section>
+
+        //Form Interaction
+        <section>
+            <h2>Task 7: Form Live Input</h2>
+            <form id="user-form">
+                <input type="text" id="name-input" placeholder="Entered Name ">
+                <input type="email" id="email-input" placeholder="Entered Email ">
+            </form>
+            <div class="live-preview" style="margin-top:10px;">
+                <p>Entered Name: <span id="live-name">---</span></p>
+                <p>Entered Email: <span id="live-email">---</span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
